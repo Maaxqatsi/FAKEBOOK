@@ -1,6 +1,9 @@
-body{
-    background-color:rgb(244, 245, 245)
-}
+
+:root{
+    --white: #fff;
+    --background: #f0f2f5;
+    --hover-shadow: #f2f2f2;
+    --box-shadow: rgba(0,0,0, 0.2)}
 *{
     margin: 0;
     padding: 0;
@@ -79,7 +82,12 @@ body{
         background: #1ec7bb;
     }
     /*============Wall====================*/
-    
+    .container-wall{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(240px, 1fr))
+    }
+
     /*================Navbar==================*/
 .navbar-main {
     font-size: 1em;
@@ -149,3 +157,4 @@ flex-basis: 25%;
     outline: none;
     margin-left: 2px;
 }
+/*======post*=========/
