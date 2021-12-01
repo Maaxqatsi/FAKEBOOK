@@ -33,6 +33,7 @@
     max-width: 100%;
 }
 .container-background {
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 10px 1fr 15px 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -93,7 +94,7 @@
     /*================Navbar==================*/
 .navbar-main {
     font-size: 1em;
-    background-color: #fffffff5;
+    background-color: white;
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -161,13 +162,14 @@ flex-basis: 25%;
 }
 /*======post============*/
 .post-container {
-    background-color: seashell;
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(autofit,1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin-top: 0.4rem;
+    border-radius: 4px;
     }
     
     .post-header { grid-area: 1 / 1 / 2 / 2;
@@ -185,9 +187,10 @@ flex-basis: 25%;
             margin-left: 2%;   
         }
         .post-header-right{
-            margin-top: 5%;
+            margin-top: 2%;
             margin-right: 8%;
             justify-content: space-around;
+            align-items: center;
 
         }
         .post-header img{ max-width: 60px;
@@ -202,10 +205,51 @@ flex-basis: 25%;
             color: rgba(41, 41, 41, 0.4)
         
         }
-    .post-footer { grid-area: 3 / 1 / 4 / 2; 
+    
+    .post-footer-wrapper{grid-area: 3 / 1 / 4 / 2;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 2% 2% 3%;
+    }
+        .post-footer-wrapper hr{
+            margin-top: 3%;
+            color: rgba(41, 41, 41, 0.4)
+        }
+    .post-footer {  
     display:flex;
     justify-content: space-around;
     }
-    .post-comments { grid-area: 4 / 1 / 5 / 2; }
-    .post-addcomment { grid-area: 5 / 1 / 5 / 2; }
+    .post-comments { grid-area: 4 / 1 / 5 / 2; 
+    
+    }
+    .post-addcomment {
+        margin: 2% 2% 2% 3%;
+        display: flex;
+        
+        align-items:center;
+        grid-area: 5 / 1 / 5 / 2; }
+        .post-addcomment img{
+            max-width: 45px;
+            border-radius: 50%;   
+        }
+        .post-addcomment-inputbox{
+            display:flex;
+            align-items: center;
+            padding-left: 10px;
+            border: 3px;
+            margin-left: 10px;
+            background-color: rgba(41, 41, 41, 0.096);
+            min-height: 43px;
+            border-radius: 20px;
+            flex-basis: 80%;
+            }
+        .post-addcomment input {
+            
+            background: none;
+            font-size: 17px;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            margin-left: 2px;
+        }
     
