@@ -3,6 +3,7 @@ body{
 }
 *{
     margin: 0;
+    padding: 0;
 font: 1em sans-serif;
 }
 
@@ -15,6 +16,7 @@ font: 1em sans-serif;
     align-items: center;
     position: sticky;
     min-height: 56px;
+    justify-content: space-between;
 }
 .navbar-left{
     display: flex;
@@ -22,6 +24,30 @@ font: 1em sans-serif;
     margin-left: 1%;
     justify-content: flex-start;
     flex-basis: 30%;
+}
+.navbar-middle{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-basis: 25%;
+}
+.navbar-right{
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-basis: 25%;  
+}
+.navbar-right .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar-right  .img img{
+    max-width: 48px;
+    border-radius: 50%;
+    margin-right: 10%;
+    
 }
 .fa-question-circle{
     color: rgb(40, 238, 205)
