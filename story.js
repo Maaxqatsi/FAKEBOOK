@@ -5,4 +5,4 @@
         input.value = "";
         }
 
-    button.addEventListener("click", addListItem);
+    button.addEventListener("click", removeInput);
